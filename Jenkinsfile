@@ -35,7 +35,8 @@ node{
    sh "docker tag bala36tsr/myweb:0.0.2 3.8.196.194:8088/bala:1.0.0"
    sh 'docker push 3.8.196.194:8088/bala:1.0.0'
    }
-    stage('Docker deployment'){
+    stage('Docker deployment new'){
    sh 'docker run -d -p 8090:8080 --name tomcattest bala36tsr/myweb:0.0.2' 
    }
 }  
+footer
